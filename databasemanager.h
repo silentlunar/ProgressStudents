@@ -2,20 +2,20 @@
 #define DATABASEMANAGER_H
 
 #include <QObject>
-#include <QSqlDatabase>  // Добавлено
-#include <QSqlQuery>     // Добавлено
-#include <QSqlError>     // Добавлено
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlError>
 
 class DatabaseManager : public QObject
 {
     Q_OBJECT
 public:
     explicit DatabaseManager(QObject *parent = nullptr);
-    bool connect(); // Подключение и инициализация БД
+    bool connect();
 
 private:
-    void createTables();   // Создание таблиц
-    void fillWithData();   // Заполнение данными
+    void createTables();
+    void fillWithData();
 
     QSqlDatabase db;
 };

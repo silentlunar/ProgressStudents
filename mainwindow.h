@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QSqlTableModel>  // Добавлено
+#include <QSqlTableModel>
 
 namespace Ui {
 class MainWindow;
